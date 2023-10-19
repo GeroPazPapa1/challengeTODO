@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Background */
+.bg-custom-bg {
+    background-color: #f2c84c00;
+    background-image: url('background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 1.1rem;
+
+    /* Regla responsive para pantallas pequeñas */
+    @media (max-width: 768px) {
+        background-size: cover;
+    }
+}
+
+.text-primary {
+    color: #f9f9f9;
+
+    /* Regla responsive para pantallas pequeñas */
+    @media (max-width: 768px) {
+        font-size: 1.2rem;
+    }
+}
+
+/* Fuente en negrita personalizada */
+.font-bold {
+    font-weight: 700;
+
+    /* Regla responsive para pantallas pequeñas */
+    @media (max-width: 768px) {
+        font-weight: 600;
+    }
+}
